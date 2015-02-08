@@ -22,7 +22,7 @@ get_subset=filter(get_data, set_date>="2007-02-01 00:00:00 GMT" & set_date <"200
 
 
 
-png(file="Plot4.png")
+png(file="plot4.png")
 par(mfrow=c(2,2))
 plot(get_subset$set_date, get_subset$Global_active_power, type="n", ylab = "Global Active Power", xlab = "")
 lines(get_subset$set_date, get_subset$Global_active_power, type="l")

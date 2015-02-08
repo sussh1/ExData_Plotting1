@@ -22,7 +22,7 @@ get_subset=filter(get_data, set_date>="2007-02-01 00:00:00 GMT" & set_date <"200
 
 
 
-png(file="Plot1.png")
+png(file="plot1.png")
 hist(get_subset$Global_active_power, freq=TRUE, col = "red", main= "Global Active Power", xlab = "Global Active Power (kilowatts)", ylab = "Frequency")
 dev.off()
 

@@ -22,7 +22,7 @@ get_subset=filter(get_data, set_date>="2007-02-01 00:00:00 GMT" & set_date <"200
 
 
 # Amended to remove box from legend
-png(file="Plot3.png")
+png(file="plot3.png")
 plot(get_subset$set_date,get_subset$Sub_metering_1,xlab="",ylab="Energy sub metering",main="", type="n")
 lines(get_subset$set_date, get_subset$Sub_metering_1)
 lines(get_subset$set_date, get_subset$Sub_metering_2, col="red")
