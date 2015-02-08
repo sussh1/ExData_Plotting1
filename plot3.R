@@ -26,7 +26,8 @@ png(file="plot3.png")
 plot(get_subset$set_date,get_subset$Sub_metering_1,xlab="",ylab="Energy sub metering",main="", type="n")
 lines(get_subset$set_date, get_subset$Sub_metering_1)
 lines(get_subset$set_date, get_subset$Sub_metering_2, col="red")
-# blue didn't seem an exact match, I tried purple but that didn't match exactly either
+# blue didn't seem an exact match, I tried purple but that didn't match exactly either however the marking doesn't say 
+# the colour must be an exact match so I have left it as blue which is near enough
 lines(get_subset$set_date, get_subset$Sub_metering_3, col="blue")
 legend("topright",c("sub_metering_1","sub_metering_2","sub_metering_3"),col=c(1,2,4), lty=1)
 dev.off()
